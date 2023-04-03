@@ -64,6 +64,6 @@ export const deleteTask = async (req, res, next) => {
         message: "Task Deleted!",
     });
     } catch (error) {
-       next(); 
+       next(error); 
     }
 }
